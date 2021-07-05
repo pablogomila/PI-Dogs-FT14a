@@ -5,3 +5,5 @@ const router = Router();
 router.get('/', function (req, res) {
     res.send('Hola Soy Temper!')
 })
+
+module.exports = router;

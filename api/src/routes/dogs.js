@@ -2,6 +2,8 @@ const { Router } = require('express');
 
 const router = Router();
 
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
     res.send('Hola Soy Dogs!')
 })
+
+module.exports = router;
