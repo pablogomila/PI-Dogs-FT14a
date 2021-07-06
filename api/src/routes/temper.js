@@ -1,9 +1,8 @@
-const { Router } = require('express');
+const { Router } = require('express')
+const { getAllTemper } = require('../Controllers/tempers')
 
-const router = Router();
+const router = Router()
 
-router.get('/', function (req, res) {
-    res.send('Hola Soy Temper!')
-})
+router.get('/', getAllTemper)
 
-module.exports = router;
+module.exports = router
