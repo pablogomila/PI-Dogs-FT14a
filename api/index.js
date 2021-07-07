@@ -5,6 +5,7 @@ const { Breed, Temperament } = require('./src/db.js');
 
 conn.sync({ force: true }).then(() => {
   let temp = new Set();
+  //! IMPORTING TEMPERAMENTS FROM API AND SAVING TO DB
   axios.get('https://api.thedogapi.com/v1/breeds')
     .then(response => response.data)
     .then(json => {
@@ -18,6 +19,7 @@ conn.sync({ force: true }).then(() => {
     .then(console.log('Temperaments (re)imported to DB'))
     .catch(err => console.error(err));
 
+  //! IMPORTING BREEDS FROM API AND SAVING TO DB
   axios.get('https://api.thedogapi.com/v1/breeds')
     .then(response => response.data)
     .then(json => {
@@ -44,6 +46,7 @@ conn.sync({ force: true }).then(() => {
     .catch(err => console.error(err));
 })
 
+//! LOGGING SERVER RUNNING
 server.listen(3001, () => {
   console.log('Backend server running at port :3001');
 });
