@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
-
+  
+  //! DEFINING BREED TABLE AT DB
   sequelize.define('breed', {
     name: {
       type: DataTypes.STRING,
@@ -24,6 +25,7 @@ module.exports = (sequelize) => {
     { timestamps: false }
   );
 
+  //! DEFINING TEMPERAMENT TABLE AT DB
   sequelize.define('temperament', {
     name: {
       type: DataTypes.STRING
