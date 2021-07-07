@@ -15,7 +15,7 @@ conn.sync({ force: true }).then(() => {
       let arrayTemp = Array.from(temp)
       Temperament.bulkCreate(arrayTemp.map(t => ({ name: t })))
     })
-    .then(console.log('Temperaments imported to DB'))
+    .then(console.log('Temperaments (re)imported to DB'))
     .catch(err => console.error(err));
 
   axios.get('https://api.thedogapi.com/v1/breeds')
@@ -29,21 +29,21 @@ conn.sync({ force: true }).then(() => {
           life_span: breed.life_span || 'Could not import life span',
           image: breed.image.url || 'https://www.seekpng.com/png/detail/360-3605845_dog-holding-paper-in-mouth.png',
         })
-        .then(b => {
+        .then(bree => {
           let breedTemp = breed.temperament && breed.temperament.split(', ');
-          breedTemp?.forEach(bt => {
+          breedTemp?.forEach(breetem => {
             Temperament.findOne({
-              where: {name: bt}
+              where: {name: breetem}
               })
-              .then(t => {b.addTemperament(t?.dataValues.id)})
+              .then(tem => {bree.addTemperament(tem?.dataValues.id)})
           })
         })
       })
     })
-    .then(console.log('Breeds imported to DB'))
+    .then(console.log('Breeds (re)imported to DB'))
     .catch(err => console.error(err));
 })
 
 server.listen(3001, () => {
-  console.log('Server running at port :3001');
+  console.log('Backend server running at port :3001');
 });
