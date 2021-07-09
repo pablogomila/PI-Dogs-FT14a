@@ -8,7 +8,7 @@ function Index() {
         <div className={style.index}>
             <div className={style.message}>
                 <p className={style.title}>Welcome to the Dogs App!</p>
-                <p className={style.text}>Get to learn everything about your favorite dog.</p>
+                <p className={style.text}>Everything you need to know about them...</p>
                 <button className={style.button} onClick={() => history.push('/home')}>Enter</button>
             </div>
         </div>
