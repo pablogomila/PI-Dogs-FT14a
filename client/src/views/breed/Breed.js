@@ -26,7 +26,7 @@ function Breed(id) {
               <p className={style.info}>Life span: {breed.life_span}</p>
               {breed.temperaments ? (
                 <div className={style.info}>
-                  <p>Temperament/s:</p>
+                  <p>Temperament:</p>
                   <div className={style.tempButtons}>
                     {breed.temperaments &&
                       breed.temperaments.map((t) => {
