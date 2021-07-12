@@ -1,13 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7f9;
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.paginate {
+  justify-content: center;
+}
+
+.paginate ul {
+  margin: 0;
+}
+
+
+.paginationButtons {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.paginationButtons a:hover {
+  box-shadow: 1px 1px 12px -1px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 1px 1px 12px -1px rgba(0,0,0,0.24);
+  -moz-box-shadow: 1px 1px 12px -1px rgba(0,0,0,0.24);
+}
+
+.paginationButtons a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 50px;
+  min-width: 20px;
+  display: inline-block;
+  border: 2px solid #00d2ad;
+  color: rgb(17, 17, 17);
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+}
+
+.paginationButtons .paginationActive a{
+  color: white;
+  background-color: #00d2ad;
+  font-weight: 600;
 }
