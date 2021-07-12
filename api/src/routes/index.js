@@ -47,7 +47,7 @@ router.get('/dogs/:id', function (req, res, next) {
         next(err)}
 });
 
-router.get('/temperaments', function (req, res, next) {
+router.get('/temperaments', function (_req, res, next) {
     //! Getting all temperaments from DB
     try {
         Temperament.findAll({ order: [['name', 'asc']] })
