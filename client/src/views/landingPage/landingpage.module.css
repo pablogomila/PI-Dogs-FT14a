@@ -21,12 +21,12 @@
 .button {
   box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
+	background-color: white;
 	border-radius:10px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
-	cursor:pointer;
-	color:#666666;
+	cursor:crosshair;
+	color:#030303;
 	font-family:Times New Roman;
 	font-size:25px;
 	font-weight:bold;
@@ -40,8 +40,8 @@
 }
 
 .button:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
+	background:linear-gradient(to bottom, #979595 55%, #ffffff 100%);
+	background-color:#5c5a5a;
 }
 
 .msgContainer {
