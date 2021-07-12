@@ -1,0 +1,42 @@
+.formContainer {
+  display: flex;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+.input {
+  font-family: inherit;
+  padding: 8px;
+  width: 300px;
+  background-color: #fca21136;
+  border-radius: 5px;
+  margin-right: 4px;
+  border: 3px solid #14213D;
+  outline: none;
+}
+
+.input:hover {
+  font-family: inherit;
+  padding: 8px;
+  background-color: #fca21136;
+  border-radius: 5px;
+  border: 3px solid #FCA311;
+  outline: none;
+}
+
+.input:focus {
+  border: 3px solid #FCA311;
+  background-color: #fca211;
+}
+
+.search {
+  color: #FCA311;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.searchBarContainer {
+  display: flex;
+}
