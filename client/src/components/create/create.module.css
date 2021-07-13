@@ -1,0 +1,160 @@
+.container {
+    background-color: #09090b;
+    padding: 15px;
+    padding-bottom: 40px;
+    width: 100%;
+    border: 5px solid #FCA311;
+    border-radius: 5px;
+}
+
+
+.selectTempContainer,
+.inputContainer{
+    color: #FCA311;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 180px;
+    align-items: center;
+}
+
+.selectTempContainer{
+    color: #14213D;
+    color: #FCA311;
+    margin-right: 0;
+}
+
+.inputContainer:not(:last-child){
+    margin-right: 50px;
+}
+
+.button {
+    color: white;
+    background-color: #FCA311;
+    border-radius: 5px;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    display: block;
+    margin: 28px auto 0;
+}
+
+
+
+.secondTitle{
+    margin-right: 5px;
+}
+
+::placeholder {
+    opacity: 1;
+ }
+
+ .input {
+    font-family: inherit;
+  padding: 8px;
+  width: 180px;
+  background-color: #fca21136;
+  border-radius: 5px;
+  margin-right: 4px;
+  border: 3px solid #14213D;
+  outline: none;
+  }
+  
+  .input:hover {
+    font-family: inherit;
+    padding: 8px;
+    background-color: #fca21136;
+    border-radius: 5px;
+    border: 3px solid #FCA311;
+    outline: none;
+  }
+  
+  .input:focus {
+    border: 3px solid #FCA311;
+  background-color: #fca211;
+  }
+
+.inputsContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.select{
+    background-color: #FCA311;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 2px solid #0000004f;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    width: 180px;
+}
+
+
+
+
+
+.temperament{
+    color: white;
+    background-color: #14213D;
+    border-radius: 5px;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    margin: 8px auto 0;
+}
+
+.tempButton{
+    margin: 4px 0;
+    border-radius: px;
+    background-color: transparent;
+    color: #FCA311;
+    border: none;
+    font-size: 15px;
+    line-height: 0%;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.tempButton:hover{
+    color: gray;
+    transition: all .2s;
+}
+
+
+.error{
+    font-size: 14px;
+    color: white;
+    margin: 10px;
+}
+
+.arrow{
+    font-size: 40px;
+    position: relative;
+    top: -110px;
+    right: 355px;
+    color: #00d2ad;
+    border-radius: 200px;
+    transform: scaleX(-1);
+}
+
+.arrow:hover{
+    color: #1bac91;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.tempButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}

@@ -21,10 +21,11 @@
 
 .linkContainer a {
     margin: 0 20px;
-    color: #E5E5E5;
+    color: #FCA311;
+    font-size: 20px;
     font-family: inherit;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     transition: all .3s;    
   }
 
