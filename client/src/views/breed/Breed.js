@@ -22,7 +22,7 @@ function Breed(id) {
             <div className={style.dataContainer}>
               <p className={style.info}>Weight: {breed.weight} kg</p>
               <p className={style.info}>Height: {breed.height} cm</p>
-              <p className={style.info}>Life span: {breed.life_span}</p>
+              <p className={style.info}>Life span: {breed.life_span} years</p>
               {breed.temperaments ? (
                 <div className={style.info}>
                   <p>Temperament:</p>

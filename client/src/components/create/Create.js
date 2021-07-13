@@ -13,23 +13,17 @@ function validateForm(input) {
   }
   if (!input.weight) {
     errors.weight = 'Weight is required'
-  } else if (!/\d{1,2}-\d{1,2}/g.test(input.weight)) {
-    errors.weight = "Must be a range. e.g. '1-5'"
   } else {
     errors.weight = ''
   }
 
   if (!input.height) {
     errors.height = 'Height is required'
-  } else if (!/\d{1,2}-\d{1,2}/g.test(input.height)) {
-    errors.height = "Must be a range. e.g. '1-5'"
   } else {
     errors.height = ''
   }
   if (!input.life_span) {
     errors.life_span = 'Lifespan is required'
-  } else if (!/\d{1,2}-\d{1,2}/g.test(input.life_span)) {
-    errors.life_span = "Must be a range. e.g. '1-5'"
   } else {
     errors.life_span = ''
   }
