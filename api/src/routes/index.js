@@ -28,7 +28,7 @@ router.post('/dogs', function (req, res, next) {
     //! Creating Breed in post with body details
     try {
         Breed.create({name, height, weight, life_span,
-            image: 'https://images-na.ssl-images-amazon.com/images/I/51qycHP4E5L.jpg'})
+            image: 'https://i.imgur.com/vFDQcYj.jpeg'})
             .then(breed => breed.setTemperaments(temperament))
             .then(res.send({ message: 'Created.!' }))
     } catch (err) {
