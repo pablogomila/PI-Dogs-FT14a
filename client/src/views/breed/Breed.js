@@ -12,7 +12,6 @@ function Breed(id) {
 
   return (
     <div className={style.mainContainer}>
-      
       <div className={style.secondContainer}>
         {breed ? (
           <div className={style.breedContainer}>

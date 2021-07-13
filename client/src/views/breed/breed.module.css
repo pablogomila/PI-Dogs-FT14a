@@ -1,145 +1,124 @@
-.title{
-    font-size: 40px;
-    font-family: inherit;
-    margin: 0;
-    color: white;
-    padding: 5px;
-    background-color: #FCA311;
-    border-radius: 5px;
-    width: fit-content;
-    padding-right: 70px;
-    padding-left: 70px;
-    margin-bottom: 30px;
+.title {
+  font-size: 40px;
+  font-family: inherit;
+  margin: 0;
+  color: white;
+  padding: 5px;
+  background-color: #fca311;
+  border-radius: 5px;
+  width: fit-content;
+  padding-right: 70px;
+  padding-left: 70px;
+  margin-bottom: 30px;
 }
 
-.secondContainer{
-    display: flex;
-    color: white;
-    flex-direction: row;
-    font-size: 20px;
+.secondContainer {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  font-size: 20px;
 }
 
-
-.dataContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.breedContainer{
-    justify-content: center;
+.breedContainer {
+  justify-content: center;
 }
 
-.tempContainer{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+.tempContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
-.img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5px;
-    
-    
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
 }
 
-.imgContainer{
-    max-width: 800px;
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.imgContainer {
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.info{
-    font-weight: 400;
-    color: #FCA311;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.info {
+  font-weight: 400;
+  color: #fca311;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
 }
-
-
 
 .button {
-    color: white;
-    background-color: #FCA311;
-    border-radius: 25px;
-    border: none;
-    font: inherit;
-    padding: 15px;
-    outline: none;
-  }
-
-
-  .secondContainer{
-      display: flex;
-  }
-
-  .mainContainer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-  }
-
-  .breedContainer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-  }
-
-  .temperament{
-    display: inline-flex;
-    margin: 5px;
-    color: white;
-    background-color: #FCA311;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 5px 15px;
-    align-items: center;
-    font-weight: 400;
+  color: white;
+  background-color: #fca311;
+  border-radius: 5px;
+  border: none;
+  font: inherit;
+  padding: 15px;
+  outline: none;
 }
 
-.tempButton{
-    margin-left: 8px;
-    border-radius: px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 15px;
-    line-height: 0%;
-    font-family: inherit;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-.arrow{
-    font-size: 60px;
-    position: absolute;
-    top: 10px;
-    left: 100px;
-    color: #FCA311;
-    border-radius: 5px;
-    transform: rotateY(-180deg);
+.breedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.arrow:hover{
-    color: #1bac91;
-    transition: all .2s;
-    cursor: pointer;
+.temperament {
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  background-color: #fca311;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 7px;
+  font-weight: 400;
 }
 
-.tempButtons{
-    margin-bottom: 30px;
+.tempButton {
+  margin-left: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 15px;
+  line-height: 0%;
+  font-family: inherit;
 }
 
-.secondContainer i{
-        font-size: 20px;
-        color: #0B223a;
+.arrow {
+  font-size: 60px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  color: #fca2115e;
+  border-radius: 5px;
+  transform: rotateY(-180deg);
 }
 
+.arrow:hover {
+  color: #fca311;
+  transition: all 0.5s;
+  cursor: pointer;
+}
