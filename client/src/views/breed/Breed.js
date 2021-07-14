@@ -3,7 +3,7 @@ import axios from 'axios'
 import style from './breed.module.css'
 import { Link } from 'react-router-dom'
 
-function Breed(id) {
+export default function Breed(id) {
   const [breed, setBreed] = useState()
 
   useEffect(() => {
@@ -22,10 +22,9 @@ function Breed(id) {
             <div className={style.dataContainer}>
               <p className={style.info}>Weight: {breed.weight} kg</p>
               <p className={style.info}>Height: {breed.height} cm</p>
-              <p className={style.info}>Life span: {breed.life_span} years</p>
+              <p className={style.info}>Life Span: {breed.life_span}</p>
               {breed.temperaments ? (
                 <div className={style.info}>
-                  <p>Temperament:</p>
                   <div className={style.tempButtons}>
                     {breed.temperaments &&
                       breed.temperaments.map((t) => {
@@ -49,4 +48,4 @@ function Breed(id) {
   )
 }
 
-export default Breed
+

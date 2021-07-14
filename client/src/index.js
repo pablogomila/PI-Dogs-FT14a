@@ -1,25 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
-import { Provider } from "react-redux";
-import { store } from "./store/index";
-import axios from 'axios';
-import dotenv from "dotenv";
-dotenv.config();
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
+import reportWebVitals from './reportWebVitals'
+import { Provider } from 'react-redux'
+import { store } from './store/index'
+import axios from 'axios'
 
-axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001";
+axios.defaults.baseURL = 'http://localhost:3001'
 
 ReactDOM.render(
-
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </Provider>,
-  document.getElementById('root')
-);
+  document.getElementById('root'),
+)
 
-reportWebVitals();
+reportWebVitals()

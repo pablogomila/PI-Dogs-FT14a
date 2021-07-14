@@ -88,7 +88,7 @@
 .temperament {
   display: inline-block;
   margin: 5px;
-  color: white;
+  color: #14213D;
   background-color: #fca311;
   border-radius: 5px;
   width: fit-content;
@@ -96,14 +96,13 @@
   font-weight: 400;
 }
 
-.tempButton {
-  margin-left: 8px;
+.tempButtons {
+  align-items: center;
+  margin-left: 10px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #fca311;
   color: white;
-  border: none;
-  font-size: 15px;
-  line-height: 0%;
+  font-size: 20px;
   font-family: inherit;
 }
 
