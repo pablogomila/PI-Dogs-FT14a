@@ -1,16 +1,18 @@
 import React from 'react'
-import style from "./landingpage.module.css";
-import { useHistory } from 'react-router';
+import style from './landingpage.module.css'
+import { useHistory } from 'react-router'
 
 function LandingPage() {
-    const history = useHistory();
-    return (
-        <div className={style.landingpage}>
-            <div className={style.msgContainer}>
-                <p className={style.title}>Welcome to the Dogs App</p>
-                <button className={style.button} onClick={() => history.push('/home')}>Enter</button>
-            </div>
-        </div>
-    )
+  const history = useHistory()
+  return (
+    <div className={style.landingpage}>
+      <div className={style.msgContainer}>
+        <p className={style.title}>Welcome to the Dogs App</p>
+        <button className={style.button} onClick={() => history.push('/home')}>
+          Enter
+        </button>
+      </div>
+    </div>
+  )
 }
 export default LandingPage

@@ -12,7 +12,7 @@ const Pagination = ({ breedsPerPage, totalBreeds, onChangePage }) => {
         {pageNumber.map((num) => (
           <button
             value={num}
-            onclick={(value) => onChangePage(value)}
+            onclick={() => onChangePage(num)}
             className={style.button}
           >
             {num}

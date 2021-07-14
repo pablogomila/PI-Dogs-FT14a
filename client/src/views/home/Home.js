@@ -18,7 +18,7 @@ function Home({ input, setInput }) {
   }, [])
 
   const [pageNumber, setPageNumber] = useState(0)
-  const breedsPerPage = 8
+  const [breedsPerPage] = useState(8)
   const pagesVisited = pageNumber * breedsPerPage
   function changePage({ num }) {
     setPageNumber(num)
