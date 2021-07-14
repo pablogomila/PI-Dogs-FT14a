@@ -1,0 +1,41 @@
+.pagination {
+  color: white;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin: 10%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.li {
+  color: white;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+.li a {
+  text-align: center;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 5px;
+  min-width: 10px;
+  display: inline-block;
+  border: 2px solid #fca311;
+  color: #fca311;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+}
+
+.pagenumber {
+  text-decoration: double;
+}
