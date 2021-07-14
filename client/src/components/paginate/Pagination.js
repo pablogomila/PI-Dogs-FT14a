@@ -10,10 +10,10 @@ const Pagination = ({ breedsPerPage, totalBreeds, onChangePage }) => {
   return (
     <nav>
       <ul className={style.pagination}>
-        {pageNumber.map((sel) => (
-          <ul key={sel} className={style.li}>
+        {pageNumber.map((num) => (
+          <ul key={num} className={style.li}>
               <a href="" onclick={(num) => onChangePage(num)} className={style.pagenumber}>
-                  {sel}
+                  {num}
               </a>
           </ul>
         ))}

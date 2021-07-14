@@ -19,6 +19,12 @@ function SearchBar({ input, setInput }) {
             onChange={(e) => setInput(e.target.value)}
             className={style.input}
           ></input>
+          <button
+            className={style.button}
+            onClick={() => (window.location.href = '/home')}
+          >
+            Clear
+          </button>
         </div>
       </form>
     </div>
