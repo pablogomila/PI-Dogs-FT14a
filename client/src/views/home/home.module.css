@@ -62,11 +62,26 @@
 }
 
 .paginateContainer {
-  display: inline;
-  justify-content: space-around;
-  max-width: 1900px;
+  display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: normal;
- 
+}
+
+
+.buttonpage {
+  border: 3px solid #14213d;
+  color: #14213d;
+  background-color: #fca211;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttonpage:hover {
+  border: 3px solid #fca211;
+  color: #14213d;
+  background-color: #fca211;
 }

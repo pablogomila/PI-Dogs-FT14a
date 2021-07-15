@@ -1,5 +1,5 @@
 .mainContainer{
-    width: 650px;
+    width: 760px;
     background-color: #fca211;
     display:flex;
     justify-content: center;
@@ -66,4 +66,17 @@
     font-size: 15px;
     font-weight: bold;
     color: #14213D
+}
+
+.clearbutton{
+    color: #FCA311;
+    background-color: #14213D;
+    border-radius: 5px;
+    border: none;
+    font: inherit;
+    padding: 15px 10px;
+    margin: 0 5px;
+    font-size: 15px;
+    width: 80px;
+    height: 70px;
 }

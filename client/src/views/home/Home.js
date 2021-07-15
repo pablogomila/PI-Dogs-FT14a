@@ -4,7 +4,7 @@ import Card from './../../components/card/Card'
 import { useDispatch, useSelector } from 'react-redux'
 import style from './home.module.css'
 import FilterSort from './../../components/filtersort/FilterSort'
-import Pagination from '../../components/paginate/Pagination'
+
 
 function Home({ input, setInput }) {
   const dispatch = useDispatch()
@@ -20,10 +20,7 @@ function Home({ input, setInput }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [breedsPerPage] = useState(8)
   const pagesVisited = pageNumber * breedsPerPage
-  function changePage({ num }) {
-    setPageNumber(num)
-  }
-
+  
   function displayBreeds(array) {
     if (array.message) {
       return (
@@ -74,11 +71,9 @@ function Home({ input, setInput }) {
           )}
         </div>
         <div className={style.paginateContainer}>
-          <Pagination
-            breedsPerPage={breedsPerPage}
-            totalBreeds={breeds.length}
-            onChangePage={changePage}
-          />
+        <button onClick={() => setPageNumber(pageNumber - 1)} className={style.buttonpage}>Previous</button>
+        <button onClick={() => setPageNumber(0)} className={style.buttonpage}>Home</button>
+        <button onClick={() => setPageNumber(pageNumber + 1)} className={style.buttonpage}>Next</button>
         </div>
       </div>
     </div>
