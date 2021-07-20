@@ -12,3 +12,4 @@ test('checking history', async () => {
     </Router>,
   )
 })
+
