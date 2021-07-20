@@ -8,6 +8,7 @@ function FilterSort() {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getTemperaments())
+    // eslint-disable-next-line
   }, [])
 
   const temperaments = useSelector((state) => state.temperaments)

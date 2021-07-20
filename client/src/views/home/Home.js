@@ -14,6 +14,7 @@ function Home({ input, setInput }) {
   useEffect(() => {
     dispatch(setLoading())
     dispatch(getBreeds())
+    // eslint-disable-next-line
   }, [])
 
   const [pageNumber, setPageNumber] = useState(0)

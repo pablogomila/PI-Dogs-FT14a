@@ -8,6 +8,7 @@ export default function Breed(id) {
 
   useEffect(() => {
     axios.get(`/dogs/${id.id}`).then((result) => setBreed(result.data))
+    // eslint-disable-next-line
   }, [])
 
   return (

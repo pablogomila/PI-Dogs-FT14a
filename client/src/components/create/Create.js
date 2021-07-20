@@ -45,6 +45,7 @@ function Create() {
 
   useEffect(() => {
     dispatch(getTemperaments())
+    // eslint-disable-next-line
   }, [])
 
   const temperaments = useSelector((state) => state.temperaments)
@@ -226,7 +227,7 @@ function Create() {
           ))}
         </div>
         <button className={style.button} type="submit">
-          Create Dog Breed
+        Create Dog Breed
         </button>
       </form>
     </div>
