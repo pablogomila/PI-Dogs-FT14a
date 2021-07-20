@@ -226,7 +226,7 @@ function Create() {
           ))}
         </div>
         <button className={style.button} type="submit">
-          Create Dog
+          Create Dog Breed
         </button>
       </form>
     </div>

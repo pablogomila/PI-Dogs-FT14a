@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import style from './home.module.css'
 import FilterSort from './../../components/filtersort/FilterSort'
 
-
 function Home({ input, setInput }) {
   const dispatch = useDispatch()
   const breeds = useSelector((state) => state.allBreeds)
@@ -20,7 +19,7 @@ function Home({ input, setInput }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [breedsPerPage] = useState(8)
   const pagesVisited = pageNumber * breedsPerPage
-  
+
   function displayBreeds(array) {
     if (array.message) {
       return (
@@ -71,9 +70,29 @@ function Home({ input, setInput }) {
           )}
         </div>
         <div className={style.paginateContainer}>
-        <button onClick={() => setPageNumber(pageNumber - 1)} className={style.buttonpage}>Previous</button>
-        <button onClick={() => setPageNumber(0)} className={style.buttonpage}>Home</button>
-        <button onClick={() => setPageNumber(pageNumber + 1)} className={style.buttonpage}>Next</button>
+          {pageNumber === 0 ? (null) : (
+          <button
+            onClick={() => {
+              if (pageNumber === 0) {
+                //! Will not go back a page
+              } else {
+                setPageNumber(pageNumber - 1)
+              }
+            }}
+            className={style.buttonpage}
+          >
+            Previous
+          </button>)}
+          {pageNumber === 0 ? (null) : (
+          <button onClick={() => setPageNumber(0)} className={style.buttonpage}>
+            Home
+          </button>)}
+          <button
+            onClick={() => setPageNumber(pageNumber + 1)}
+            className={style.buttonpage}
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export function Nav({ setInput, input }) {
             Home
           </Link>
           <Link to="/create" className={style.hover}>
-            Create Custom Dog
+            Create Dog Breed
           </Link>
         </div>
         <SearchBar setInput={setInput} input={input} />

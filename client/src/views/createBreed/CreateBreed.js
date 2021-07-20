@@ -10,7 +10,7 @@ function CreateBreed() {
         <span class="fas fa-caret-square-right"></span>
       </Link>
       <div className={style.secondContainer}>
-        <p className={style.title}>Create Custom Dog</p>
+        <p className={style.title}>Create Dog Breed</p>
         <Create />
       </div>
     </div>

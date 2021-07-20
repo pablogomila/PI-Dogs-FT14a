@@ -153,8 +153,11 @@
 }
 
 .tempButtons {
-    display: flex;
-    justify-content: center;
+    align-content: center;
+    width: 180px;
+    display: center;
+    justify-self: center;
+    margin-left: 630px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
