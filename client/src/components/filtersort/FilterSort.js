@@ -92,11 +92,11 @@ function FilterSort() {
         </select>
       </form>
       <button
-            className={style.clearbutton}
-            onClick={() => (window.location.href = '/home')}
-          >
-            Clear All Filters
-          </button>
+        className={style.clearbutton}
+        onClick={() => (window.location.href = '/home')}
+      >
+        Clear All Filters
+      </button>
     </div>
   )
 }

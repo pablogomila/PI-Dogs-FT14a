@@ -71,23 +71,24 @@ function Home({ input, setInput }) {
           )}
         </div>
         <div className={style.paginateContainer}>
-          {pageNumber === 0 ? (null) : (
-          <button
-            onClick={() => {
-              if (pageNumber === 0) {
-                //! Will not go back a page
-              } else {
+          {pageNumber === 0 ? null : (
+            <button
+              onClick={() => {
                 setPageNumber(pageNumber - 1)
-              }
-            }}
-            className={style.buttonpage}
-          >
-            Previous
-          </button>)}
-          {pageNumber === 0 ? (null) : (
-          <button onClick={() => setPageNumber(0)} className={style.buttonpage}>
-            Home
-          </button>)}
+              }}
+              className={style.buttonpage}
+            >
+              Previous
+            </button>
+          )}
+          {pageNumber === 0 ? null : (
+            <button
+              onClick={() => setPageNumber(0)}
+              className={style.buttonpage}
+            >
+              Home
+            </button>
+          )}
           <button
             onClick={() => setPageNumber(pageNumber + 1)}
             className={style.buttonpage}
