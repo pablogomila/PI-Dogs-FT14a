@@ -4,6 +4,7 @@ import { getTemperaments } from '../../actions/index'
 import axios from 'axios'
 import style from './create.module.css'
 
+//! Create Page Component - With Form and Validators
 function validateForm(input) {
   let errors = {}
   if (!input.name) {
@@ -30,6 +31,7 @@ function validateForm(input) {
   return errors
 }
 
+//! Create Page Component - Function to create a new Dog Breed
 function Create() {
   const [errors, setErrors] = useState({})
   const [touched, setTouched] = useState({})
@@ -43,6 +45,7 @@ function Create() {
 
   const dispatch = useDispatch()
 
+  //! Create Page Component - Importing of Temperaments to make the avaliable
   useEffect(() => {
     dispatch(getTemperaments())
     // eslint-disable-next-line
@@ -50,6 +53,7 @@ function Create() {
 
   const temperaments = useSelector((state) => state.temperaments)
 
+  //! Create Page Component - Function to handle the inputs
   function handleInput(e) {
     setInput({
       ...input,
@@ -63,6 +67,7 @@ function Create() {
     )
   }
 
+  //! Create Page Component - Function to handle click on the input
   function onFocus(ev) {
     setTouched({
       ...touched,
@@ -70,6 +75,7 @@ function Create() {
     })
   }
 
+  //! Create Page Component - Function to handle the submit
   function handleSubmit(e) {
     e.preventDefault()
     if (!errors.name && !errors.weight && !errors.height && !errors.life_span) {
@@ -91,6 +97,7 @@ function Create() {
     }
   }
 
+  //! Create Page Component - Function to handle repeated temperaments selected
   function handleSelect(e) {
     if (input.temperament.includes(parseInt(e.target.value))) {
       alert('Please, don´t repeat yourself (•_•)')
@@ -102,13 +109,15 @@ function Create() {
     }
   }
 
-  function deleteTemp(e, t) {
+  //! Create Page Component - Function to delete a selected temperament
+  function deleteTemp(_e, t) {
     setInput((prev) => ({
       ...prev,
       temperament: prev.temperament.filter((temp) => temp !== parseInt(t)),
     }))
   }
 
+  //! Create Page Component - Function to get names of temperaments
   function getNames(arr) {
     let names = []
     temperaments.forEach((t) => {
@@ -221,7 +230,7 @@ function Create() {
                 className={style.tempButton}
                 onClick={(e) => deleteTemp(e, t)}
               >
-                x
+                X
               </button>
             </p>
           ))}

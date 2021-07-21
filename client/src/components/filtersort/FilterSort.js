@@ -11,12 +11,14 @@ function FilterSort() {
     // eslint-disable-next-line
   }, [])
 
+  //! Importing temperaments and all breeds to handle filtering
   const temperaments = useSelector((state) => state.temperaments)
   const breeds = useSelector((state) => state.allBreeds)
 
   let [selectedTemp, setSelectedTemp] = useState('')
   let [tempToFilterBy, setTempToFilterBy] = useState([])
 
+  //! Setting what to do onClick
   function handleClick() {
     let filtered = []
     breeds.forEach((b) => {
@@ -27,28 +29,34 @@ function FilterSort() {
     dispatch(filter(filtered))
   }
 
+  //! Resetting Temperaments sets the filter to empty
   function resetTemps(e) {
     dispatch(filter([]))
   }
 
+  //! Setting what to do in case of temperament selection change
   function handleChangeTemp(e) {
     setSelectedTemp(e.target.value)
   }
 
+  //! Setting what to do on Submit
   function handleSubmit(e) {
     e.preventDefault()
     setTempToFilterBy([...tempToFilterBy, selectedTemp])
   }
 
+  //! Setting what to do if ordering is selected
   function handleOrder(e) {
     dispatch(sortBreeds(e.target.value))
   }
 
+  //! Setting what to do if ordering is selected by weight
   function handleOrderByWeight(e) {
     dispatch(orderByWeight(e.target.value))
   }
 
   return (
+    //! Form to select Temperament al filter by it
     <div className={style.mainContainer}>
       <form className={style.formContainer} onSubmit={handleSubmit}>
         <select
@@ -65,11 +73,11 @@ function FilterSort() {
           ))}
         </select>
         <div className={style.btnContainer}>
-          <button onClick={resetTemps} className={style.button}>
-            Clear
-          </button>
           <button onClick={() => handleClick()} className={style.button}>
             Filter
+          </button>
+          <button onClick={resetTemps} className={style.button}>
+            Clear
           </button>
         </div>
       </form>
@@ -77,18 +85,18 @@ function FilterSort() {
       <form className={style.formContainer}>
         <p className={style.text}>Order By Weight</p>
         <select onChange={handleOrderByWeight} className={style.select}>
-          <option value="">Options</option>
-          <option value="MINMAX">Heavy to Light</option>
-          <option value="MAXMIN">Light to Heavy</option>
+          <option value="">Filter By Weight</option>
+          <option value="HL">Heavy to Light</option>
+          <option value="LH">Light to Heavy</option>
         </select>
       </form>
 
       <form className={style.formContainer}>
         <p className={style.text}>Order By Letter</p>
         <select onChange={handleOrder} className={style.select}>
-          <option value="">Options</option>
-          <option value="ASC">A-Z</option>
-          <option value="DESC">Z-A</option>
+          <option value="">Filter by Letter - AZ</option>
+          <option value="AZ">A-Z</option>
+          <option value="ZA">Z-A</option>
         </select>
       </form>
       <button

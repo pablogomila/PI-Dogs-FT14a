@@ -2,6 +2,7 @@ import React from 'react'
 import style from './card.module.css'
 import { Link } from 'react-router-dom'
 
+//! Simple Card Component to show Breeds on Home Page
 function Card({ id, name, img }) {
   return (
     <div className={style.card}>

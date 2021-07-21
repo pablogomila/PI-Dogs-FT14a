@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './searchbar.module.css'
 
+    //! SearchBar input and Clear button
 function SearchBar({ input, setInput }) {
   return (
     <div>
@@ -15,7 +16,7 @@ function SearchBar({ input, setInput }) {
           <input
             type="text"
             value={input}
-            placeholder="Search"
+            placeholder="Search Dog Breed"
             onChange={(e) => setInput(e.target.value)}
             className={style.input}
           ></input>

@@ -7,7 +7,8 @@ export default function Breed(id) {
   const [breed, setBreed] = useState()
 
   useEffect(() => {
-    axios.get(`/dogs/${id.id}`).then((result) => setBreed(result.data))
+    axios.get(`/dogs/${id.id}`)
+    .then((result) => setBreed(result.data))
     // eslint-disable-next-line
   }, [])
 

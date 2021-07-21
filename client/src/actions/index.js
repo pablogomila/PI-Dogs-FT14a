@@ -6,6 +6,7 @@ export const GET_TEMPERAMENTS = 'GET_TEMPERAMENTS'
 export const FILTER = 'FILTER'
 export const SET_LOADING = 'SET_LOADING'
 
+//! Sends Action to get all breeds
 export function getBreeds() {
   return function (dispatch) {
     return axios
@@ -17,12 +18,14 @@ export function getBreeds() {
   }
 }
 
+//! Sends Action to set loading
 export function setLoading() {
   return {
     type: SET_LOADING,
   }
 }
 
+//! Sends Action to get breed by query
 export function getBreed(name) {
   return function (dispatch) {
     return axios
@@ -34,6 +37,7 @@ export function getBreed(name) {
   }
 }
 
+//! Sends Action to get all temperaments
 export function getTemperaments() {
   return function (dispatch) {
     return axios
@@ -45,6 +49,7 @@ export function getTemperaments() {
   }
 }
 
+//! Sends Action to set filter
 export function filter(payload) {
   return {
     type: FILTER,
@@ -52,12 +57,14 @@ export function filter(payload) {
   }
 }
 
+//! Sends Action to set sorting
 export function sortBreeds(order) {
   return {
     type: order,
   }
 }
 
+//! Sends Action to set order by weight
 export function orderByWeight(order) {
   return {
     type: order,
