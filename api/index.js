@@ -29,7 +29,7 @@ conn.sync({ force: true }).then(() => {
           weight: breed.weight.metric || 'Could not import weight',
           height: breed.height.metric || 'Could not import height',
           life_span: breed.life_span || 'Could not import life span',
-          image: breed.image.url || 'https://www.seekpng.com/png/detail/360-3605845_dog-holding-paper-in-mouth.png',
+          image: breed.image.url || 'Could not import image',
         })
         .then(bree => {
           let breedTemp = breed.temperament && breed.temperament.split(', ');
