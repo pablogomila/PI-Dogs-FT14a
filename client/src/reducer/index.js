@@ -121,7 +121,7 @@ const rootReducer = (state = initialState, action) => {
       b.weight = promedy
     }
     // if (typeof b.weight === 'number') {
-    //   let promedy = (b.weight[0]) / 2
+    //   let promedy = (b.weight[0])
     //   b.weight = promedy
     // }
   })
