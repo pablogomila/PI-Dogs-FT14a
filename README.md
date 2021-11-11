@@ -11,7 +11,7 @@ git clone http://github.com/pablogomila/PI-Dogs-FT14a
 ## Instalar dependencias
 - Dentro de la carpeta donde se clono el repositorio ingresar los siguientes comandos
 ```sh
-cd server
+cd api
 npm install
 ```
 - Abrir una nueva consola, dentro de la carpeta donde se clono el repositorio ingresar:
@@ -21,7 +21,7 @@ npm install
 ```
 
 ## Correr la aplicación
-- Una vez instaladas las dependencias dentro de /server ingresar el siguiente comando:
+- Una vez instaladas las dependencias dentro de /api ingresar el siguiente comando:
 ```sh
 npm start
 ```
