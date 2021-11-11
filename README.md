@@ -1,4 +1,6 @@
-# Chat-App
+Dogs App
+
+
 
 ## Clonar repositorio de Github a una carpeta local
 - En una terminal utilizar el siguiente comando:
